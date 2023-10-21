@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #5c2dd5;
+  --main-menu-rectangle-purp: #7945ff;
+}
+body {
+  height: 100vh;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+}
+
+.main-menu-group-6 {
+  width: 480px;
+  height: 435px;
+  background-color: var(--main-menu-rectangle-purp);
+  border-radius: 40px;
+  border: 3px solid black;
+  box-shadow: 0px 10px black;
+}
