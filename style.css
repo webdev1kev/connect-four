@@ -150,3 +150,15 @@ button {
   position: absolute;
   bottom: -110px;
 }
+
+.timertextcontainer {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  display: grid;
+  justify-items: center;
+}
+.seconds {
+  font-size: 56px;
+  font-weight: 700;
+}
