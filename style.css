@@ -9,6 +9,7 @@
 :root {
   --dark-purple: #5c2dd5;
   --purple: #7945ff;
+  --Red: #fd6687;
 }
 main {
   height: 100vh;
@@ -21,7 +22,16 @@ button {
   font-family: "Space Grotesk";
   cursor: pointer;
 }
-
+.menu-button {
+  width: 400px;
+  height: 72px;
+  border-radius: 20px;
+  border: 3px solid black;
+  box-shadow: 0px 10px black;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
 /* MAIN PAGE STYLES */
 
 .main-page {
@@ -41,6 +51,7 @@ button {
 .button-holder {
   display: grid;
   row-gap: 25px;
+  place-items: center;
 }
 .play-button {
   border-radius: 20px;
@@ -51,10 +62,11 @@ button {
   box-shadow: 0px 10px black;
   font-size: 24px;
   font-weight: 700;
+  text-align: left;
+  padding-left: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  padding-left: 15px;
 }
 .play-button svg {
   place-self: center end;
@@ -161,4 +173,22 @@ button {
 .seconds {
   font-size: 56px;
   font-weight: 700;
+}
+.in-game-menu-box {
+  width: 480px;
+  height: 435px;
+  background-color: var(--purple);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 56px;
+  color: white;
+  border-radius: 40px;
+  border: 3px solid black;
+  box-shadow: 0px 10px black;
+  padding-bottom: 15px;
+}
+.quit-game {
+  background-color: var(--Red);
+  color: white;
 }
