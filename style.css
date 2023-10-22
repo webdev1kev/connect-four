@@ -1,3 +1,5 @@
+/* GENERIC STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +7,31 @@
 }
 
 :root {
-  --background: #5c2dd5;
-  --main-menu-rectangle-purp: #7945ff;
+  --dark-purple: #5c2dd5;
+  --purple: #7945ff;
 }
-body {
+main {
   height: 100vh;
-  background-color: var(--background);
   display: grid;
   place-items: center;
+  font-family: "Space Grotesk";
+}
+
+button {
+  font-family: "Space Grotesk";
+  cursor: pointer;
+}
+
+/* MAIN PAGE STYLES */
+
+.main-page {
+  background-color: var(--dark-purple);
 }
 
 .main-menu-group-6 {
   width: 480px;
   height: 435px;
-  background-color: var(--main-menu-rectangle-purp);
+  background-color: var(--purple);
   border-radius: 40px;
   border: 3px solid black;
   box-shadow: 0px 10px black;
@@ -36,7 +49,6 @@ body {
   width: 400px;
   border: 3px solid black;
   box-shadow: 0px 10px black;
-  font-family: "Space Grotesk";
   font-size: 24px;
   font-weight: 700;
   display: grid;
@@ -55,9 +67,86 @@ body {
   border-radius: 20px;
   border: 3px solid black;
   box-shadow: 0px 10px black;
-  font-family: "Space Grotesk";
   font-size: 24px;
   font-weight: 700;
   text-align: left;
   padding-left: 15px;
+}
+
+/* GAME PAGE STYLES */
+
+.game-page {
+  background-color: var(--purple);
+}
+
+.menu-container {
+  width: 635px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generic-button {
+  border-radius: 50px;
+  height: 40px;
+  padding: 2px 15px;
+  border: none;
+  background-color: var(--dark-purple);
+  color: white;
+  font-weight: 700;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1000px;
+}
+
+.score-box {
+  border-radius: 20px;
+  background-color: white;
+  height: 160px;
+  width: 140px;
+  border: 3px solid black;
+  box-shadow: 0px 10px black;
+  position: relative;
+
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+}
+
+.score-box svg {
+  position: absolute;
+  top: -30px;
+}
+
+.name {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.score {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.game-board {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+
+  display: grid;
+  justify-items: center;
+}
+
+.game-board div {
+  position: absolute;
+}
+
+.timer {
+  position: absolute;
+  bottom: -110px;
 }
