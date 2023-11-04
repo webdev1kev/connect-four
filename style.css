@@ -218,6 +218,7 @@ button {
   height: 100%;
   display: grid;
   padding: 30px 34px;
+  position: relative;
   /* background-color: aquamarine; */
 }
 
@@ -238,4 +239,14 @@ button {
 .list-numbers li p {
   opacity: 0.5;
   font-feature-settings: "clig" off, "liga" off;
+}
+
+.check-button-tag {
+  justify-self: center;
+  position: absolute;
+  bottom: -50px;
+}
+.check-button {
+  background-color: transparent;
+  border: none;
 }
