@@ -21,6 +21,8 @@ main {
 button {
   font-family: "Space Grotesk";
   cursor: pointer;
+  background-color: unset;
+  border: unset;
 }
 .menu-button {
   width: 400px;
@@ -89,13 +91,15 @@ button {
 
 .game-page {
   background-color: var(--purple);
+  grid-template-rows: repeat(2, min-content);
 }
-
 .menu-container {
   width: 635px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 2rem;
 }
 
 .generic-button {
@@ -249,4 +253,19 @@ button {
 .check-button {
   background-color: transparent;
   border: none;
+}
+.button-grid {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  padding-bottom: 3rem;
+  position: absolute;
+  top: 0;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(7, 1fr);
+}
+.button-grid button {
+  background-color: #fd66876f;
+  border-radius: 50rem;
 }
